@@ -15,8 +15,6 @@ func main() {
                 if prefix == "ENVECHO" {
                         fmt.Printf("%s\n", pair)
                 }
-                // TODO strings.splitAfterNとかで拾うといいかも
-                // ENVECHO_HANDLE_{PATH}_{FORMAT}_{BODY}
         }
         host, ok := os.LookupEnv("ENVECHO_HOST")
         if !ok {
