@@ -26,7 +26,7 @@ func main() {
 	}
 	message, ok := os.LookupEnv("ENVECHO_MESSAGE")
 	if !ok {
-		message = "Set a MESSAGE to configure response text"
+		message = "Set ENVECHO_MESSAGE to configure response text"
 	}
 	address := fmt.Sprintf("%s:%s", host, port)
 
