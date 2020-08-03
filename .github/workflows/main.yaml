@@ -6,6 +6,7 @@ on:
 jobs:
   build_and_push:
     name: Build and push
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
